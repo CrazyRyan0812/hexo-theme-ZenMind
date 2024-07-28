@@ -53,6 +53,18 @@ picture
     display: block;
 }
 
+/* 默认样式，适用于所有设备 */
+.me-photo-width {
+    width: 100%;
+}
+
+/* 大于768px（平板或桌面设备）时应用50%的宽度 */
+@media (min-width: 768px) {
+    .me-photo-width {
+        width: 50% !important;
+    }
+}
+
 input,
 button,
 textarea,
